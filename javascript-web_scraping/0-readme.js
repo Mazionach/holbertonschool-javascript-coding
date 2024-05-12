@@ -1,8 +1,7 @@
 
-const fs = require('fs');
+const { argv } = require('node:process');
 
-
-fs.readFile(arguments[0], (err, data) => {
+fs.readFile(process.argv[2], (err, data) => {
   if (err) {
     console.error(err);
     return;
