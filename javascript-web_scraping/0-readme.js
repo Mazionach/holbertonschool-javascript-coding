@@ -11,8 +11,8 @@ if (!process.argv[2]){
 fs.readFile(process.argv[2], (err, data) => {
   if (err) {
     console.error(err);
-    return;
+  } else {
+    console.log(data);
   }
-  console.log(data);
 });
 
