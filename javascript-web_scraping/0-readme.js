@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-if (!process.argv[2]){
+if (!process.argv[2]) {
   console.error('No file path');
   process.exit(1);
 }
