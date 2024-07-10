@@ -8,7 +8,7 @@ if (!process.argv[2]){
 	process.exit(1);
 }
 
-fs.readFile(process.argv[2], (err, data) => {
+fs.readFile(process.argv[2], 'utf-8', (err, data) => {
   if (err) {
     console.error(err);
   } else {
