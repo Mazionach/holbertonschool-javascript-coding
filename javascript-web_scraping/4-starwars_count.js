@@ -7,6 +7,7 @@ req(process.argv[2], (err, resp, body) => {
     console.error(err);
   } else {
     const movies = JSON.parse(body).results;
-    console.log(movies.filter(f => f.characters.includes('https://swapi-api.hbtn.io/api/people/18/')).length)
+    const filter = movies.filter(f => f.characters.includes('https://swapi-api.hbtn.io/api/people/18/'));
+    console.log(filter.length);
   }
 });
