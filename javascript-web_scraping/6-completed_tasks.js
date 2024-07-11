@@ -16,7 +16,7 @@ req(process.argv[2], (err, resp, body) => {
           tasks[t.userId] = 1;
         }
       }
-    }
+    });
     console.log(tasks);
   }
 });
