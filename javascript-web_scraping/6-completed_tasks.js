@@ -10,7 +10,7 @@ req(process.argv[2], (err, resp, body) => {
     JSON.parse(body).forEach((t) => {
       if (t.completed) {
         if (tasks[t.userId]) {
-          tasks[t.userId] = tasks[t.userId+1];
+          tasks[t.userId] = tasks[t.userId] + 1;
         }
         if (!tasks[t.userId]) {
           tasks[t.userId] = 1;
